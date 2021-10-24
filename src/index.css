@@ -1,8 +1,65 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/*=====================***========================
+=                     Fonts                      =
+=================================================*/
+/* Barlow */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+
+/* Fraunces */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+
+/*
+  font-family: 'Barlow', sans-serif;
+  font-family: 'Fraunces', serif;
+*/
+/*=====  End of Fonts  ======*/
+
+/*       -------------------***---------------------       */
+
+/*======================***=======================
+=                   Variables                    =
+================================================*/
+:root {
+  --clr-red-line: hsl(7, 99%, 70%);
+  --clr-yelow-line: hsl(51, 100%, 49%);
+
+  --clr-gd-text: hsl(167, 40%, 24%);
+  --clr-p-text: hsl(198, 62%, 26%);
+
+  --clr-main-bg: hsl(0, 0%, 100%);
+  --clr-footer-bg: hsl(168, 34%, 41%);
+
+  --clr-main-f: hsl(212, 27%, 19%);
+  --clr-primary-f: hsl(213, 9%, 39%);
+  --clr-secondary-f: hsl(232, 10%, 55%);
+  --clr-tertiary-f: hsl(210, 4%, 67%);
 }
+/*=====  End of Variables  ======*/
+
+/*       -------------------***---------------------       */
+
+/*====================***=========================
+=                 Global Styles                  =
+================================================*/
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-size: 1.8rem;
+}
+/*=====  End of Global Styles  ======*/
+
+/*       -------------------***---------------------       */
