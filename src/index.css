@@ -1,8 +1,6 @@
 /*=====================***========================
 =                     Fonts                      =
 =================================================*/
-/* Barlow */
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
 
 /* Fraunces */
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
@@ -20,12 +18,13 @@
 ================================================*/
 :root {
   --clr-red-line: hsl(7, 99%, 70%);
-  --clr-yelow-line: hsl(51, 100%, 49%);
+  --clr-yellow-line: hsl(51, 100%, 49%);
 
   --clr-gd-text: hsl(167, 40%, 24%);
   --clr-p-text: hsl(198, 62%, 26%);
 
   --clr-main-bg: hsl(0, 0%, 100%);
+  --clr-main-bg-opc: hsla(0, 0%, 100%, 0.3);
   --clr-footer-bg: hsl(168, 34%, 41%);
 
   --clr-main-f: hsl(212, 27%, 19%);
@@ -53,12 +52,24 @@ html {
 }
 
 html,
-body {
+body,
+#root,
+main {
   height: 100%;
 }
 
 body {
   font-size: 1.8rem;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 /*=====  End of Global Styles  ======*/
 
