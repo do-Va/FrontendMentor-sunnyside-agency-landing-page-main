@@ -30,7 +30,12 @@ const Service = ({ title, desc, imgs, clr }) => {
 const Wrapper = styled.figure`
   position: relative;
   width: 100%;
+  height: 100%;
   overflow: hidden;
+
+  &:not(:last-child) {
+    margin-bottom: -4px;
+  }
 
   img {
     width: 100%;
