@@ -14,11 +14,13 @@ const Content = () => {
 const Wrapper = styled.div`
   position: relative;
   width: 100%;
-  height: calc(538px - 60px);
+  height: 100%;
+  padding-inline: 1em;
 
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 
   text-align: center;
   font-family: 'Fraunces', serif;
@@ -29,7 +31,7 @@ const Wrapper = styled.div`
   color: var(--clr-main-bg);
 
   h2 {
-    margin: 1.7em 0 1em;
+    margin-bottom: 1em;
   }
 `;
 

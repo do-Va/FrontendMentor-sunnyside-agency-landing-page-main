@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-import Navbar from '../Header/Navbar';
 import Content from '../Header/Content';
 
 import mobileBg from '../Header/images/image-header-mobile.jpg';
@@ -9,7 +8,6 @@ import desktopBg from '../Header/images/image-header-desktop.jpg';
 const Header = () => {
   return (
     <Wrapper>
-      <Navbar />
       <Content />
     </Wrapper>
   );
@@ -17,11 +15,14 @@ const Header = () => {
 
 const Wrapper = styled.header`
   width: 100%;
+  height: 80%;
+  margin-top: -94px;
   background: url(${mobileBg}) bottom center/cover;
 
-  @media only screen and (min-width: 571px) {
+  @media only screen and (min-width: 624px) {
     background: url(${desktopBg}) bottom center/cover;
-    min-height: 100%;
+
+    min-height: calc(100% + 94px);
   }
 `;
 

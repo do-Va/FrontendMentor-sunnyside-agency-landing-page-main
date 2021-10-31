@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 
-import menu from '../images/icon-hamburger.svg';
+import menu from './images/icon-hamburger.svg';
 
 const MobileMenu = () => {
   const [isClicked, setIsClicked] = useState(false);
@@ -10,19 +10,27 @@ const MobileMenu = () => {
     setIsClicked(!isClicked);
   };
 
+  const resize = () => {
+    if (window.innerWidth >= 700) {
+      setIsClicked(false);
+    }
+  };
+
+  window.addEventListener('resize', resize);
+
   return (
     <Wrapper>
       <ul className={isClicked ? 'links show' : 'links'}>
-        <li className="link">
+        <li className="link" onClick={handleClick}>
           <a href="#about">about</a>
         </li>
-        <li className="link">
+        <li className="link" onClick={handleClick}>
           <a href="#services">services</a>
         </li>
-        <li className="link">
+        <li className="link" onClick={handleClick}>
           <a href="#projects">projects</a>
         </li>
-        <li className="link">
+        <li className="link" onClick={handleClick}>
           <a href="#contact" className="btn">
             contact
           </a>

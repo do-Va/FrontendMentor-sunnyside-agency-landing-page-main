@@ -42,7 +42,7 @@ const Wrapper = styled.nav`
 
       .btn {
         display: block;
-        padding: 1em;
+        padding: 1em 2em;
         background: var(--clr-main-bg);
         color: var(--clmain-f);
         border-radius: 50px;
