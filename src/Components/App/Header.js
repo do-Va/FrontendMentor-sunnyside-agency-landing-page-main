@@ -16,7 +16,7 @@ const Header = () => {
 const Wrapper = styled.header`
   width: 100%;
   height: 80%;
-  margin-top: -94px;
+  overflow: hidden;
   background: url(${mobileBg}) bottom center/cover;
 
   @media only screen and (min-width: 624px) {
