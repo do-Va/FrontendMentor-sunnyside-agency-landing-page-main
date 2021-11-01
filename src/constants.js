@@ -70,3 +70,10 @@ export const testimonials = [
       'Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!',
   },
 ];
+
+export const projects = [
+  { id: 1, name: 'Milk Bottles', imgs: { mob: 'mobMilk', desk: 'deskMilk' } },
+  { id: 2, name: 'Orange', imgs: { mob: 'mobOrange', desk: 'deskOrange' } },
+  { id: 3, name: 'Cone', imgs: { mob: 'mobCone', desk: 'deskCone' } },
+  { id: 4, name: 'Sugar Cubes', imgs: { mob: 'mobSugar', desk: 'deskSugar' } },
+];

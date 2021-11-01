@@ -18,8 +18,8 @@ class App extends Component {
         <About />
         <Services />
         <Testimonials />
-        {/* <Projects />
-        <Contact /> */}
+        <Projects />
+        {/* <Contact /> */}
       </main>
     );
   }
