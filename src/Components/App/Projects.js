@@ -5,7 +5,7 @@ import Picture from '../Projects/Picture';
 
 const Projects = () => {
   return (
-    <Wrapper>
+    <Wrapper id="projects">
       {projects.map(project => {
         return <Picture key={project.id} {...project} />;
       })}
