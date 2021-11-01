@@ -72,7 +72,9 @@ const Wrapper = styled.figure`
   }
 
   @media only screen and (min-width: 820px) {
-    min-height: 396.5px;
+    img {
+      min-height: 396.5px;
+    }
 
     figcaption {
       .container {

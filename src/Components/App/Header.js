@@ -22,7 +22,7 @@ const Wrapper = styled.header`
   @media only screen and (min-width: 624px) {
     background: url(${desktopBg}) bottom center/cover;
 
-    min-height: calc(100% + 94px);
+    min-height: 100%;
   }
 `;
 
