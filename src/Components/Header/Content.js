@@ -31,6 +31,7 @@ const Wrapper = styled.div`
   color: var(--clr-main-bg);
 
   h2 {
+    margin-top: 1.5em;
     margin-bottom: 1em;
   }
 `;
